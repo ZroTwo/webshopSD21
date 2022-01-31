@@ -41,6 +41,14 @@ class Usert{
         }
     }
     public function register() {
+        $database = new Database();
 
+        $connection = $database->connect();
+
+
+            $queryStatement = $connection->prepare("INSERT INTO users (email, password) values (:email, :password)");
+            $queryStatement->execute([':email' => $_POST['email'], ':password' => $_POST['password']]);
+
+            header('Location: index.php');
     }
 }
