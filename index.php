@@ -67,4 +67,8 @@
             </div>
         </div>
     </header>
+
+    <footer>
+
+    </footer>
 </body>
