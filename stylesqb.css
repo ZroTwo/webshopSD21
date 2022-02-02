@@ -1,0 +1,18 @@
+header{
+    background: rgba(69, 0, 118, 0.84);
+}
+.btnproduct {
+    background-color: rgba(69, 0, 118, 0.84);
+}
+
+.btnproduct:hover {
+    background-color: grey;
+}
+.product1 {
+    display: flex;
+    justify-content: center;
+}
+.btntext {
+    display: flex;
+    justify-content: center;
+}

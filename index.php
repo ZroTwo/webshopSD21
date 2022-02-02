@@ -38,8 +38,9 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
 </head>
+<div class=bodyproducts>
 <body>
     <header class="p-3 bg-purple text-white">
         <div class="container">
@@ -50,8 +51,7 @@
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#home" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="#equip" class="nav-link px-2 text-white">Equipment</a></li>
-                    <li><a href="#supplements" class="nav-link px-2 text-white">Supplements</a></li>
+                    <li><a href="products.php" class="nav-link px-2 text-white">Products</a></li>
                     <li><a href="#workout" class="nav-link px-2 text-white">Workout Tips</a></li>
                 </ul>
 
@@ -67,3 +67,4 @@
         </div>
     </header>
 </body>
+    </div>
