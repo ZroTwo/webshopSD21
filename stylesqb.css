@@ -8,9 +8,10 @@ header{
 .btnproduct:hover {
     background-color: grey;
 }
-.product1 {
+.products {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 .btntext {
     display: flex;
