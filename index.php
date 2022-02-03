@@ -67,8 +67,50 @@
             </div>
         </div>
     </header>
+    <h1 class="h1">Macho Man Gym</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/Logo.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Test Foto 1</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at atque corporis dolorem doloremque dolorum error esse fuga hic impedit, in laboriosam magnam, modi perspiciatis placeat quam, reprehenderit ut?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/logo3.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Test Foto 2</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores dolores facilis, magni minus nesciunt, nobis nostrum possimus temporibus ullam unde velit veritatis! Cupiditate enim iusto neque sequi similique vel.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/logo2.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>...</h5>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" onclick="$('.carousel').carousel('prev');" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" onclick="$('.carousel').carousel('next');" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+    </script>
 </body>
