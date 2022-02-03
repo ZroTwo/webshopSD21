@@ -11,7 +11,7 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-$stmt = $conn->prepare("SELECT * FROM products");
+$stmt = $conn->prepare("SELECT * FROM products WHERE category_id = 1");
 $stmt->execute();
 
 ?>
@@ -105,7 +105,7 @@ foreach ($stmt->fetchAll() as $product) {
             </div>
         </div>
     </div>
-<?php
+    <?php
 }
 ?>
 

@@ -11,7 +11,7 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-$stmt = $conn->prepare("SELECT * FROM products WHERE category_id = 1");
+$stmt = $conn->prepare("SELECT * FROM products WHERE category_id = 2");
 $stmt->execute();
 
 ?>
@@ -95,10 +95,10 @@ foreach ($stmt->fetchAll() as $product) {
     ?>
     <div class="products">
         <div class="card cardproduct" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="<?php echo $product['image'] ?>" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $product['title'] ?></h5>
-                <p class="card-text">short product description.</p>
+                <p class="card-text"><?php echo $product['description'] ?></p>
                 <div class="btntext">
                     <a href="#" class="btn btnproduct btn-primary">More details</a>
                 </div>
