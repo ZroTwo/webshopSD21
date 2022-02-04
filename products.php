@@ -90,6 +90,7 @@ $stmt->execute();
 </header>
 <br>
 <br>
+<div class="allcards">
 <?php
 foreach ($stmt->fetchAll() as $product) {
     ?>
@@ -97,8 +98,10 @@ foreach ($stmt->fetchAll() as $product) {
         <div class="card cardproduct" style="width: 18rem;">
             <img class="card-img-top" src="<?php echo $product['image'] ?>" alt="Card image cap">
             <div class="card-body">
+                <div>
                 <h5 class="card-title"><?php echo $product['title'] ?></h5>
                 <p class="card-text"><?php echo $product['description'] ?></p>
+                </div>
                 <div class="btntext">
                     <a href="#" class="btn btnproduct btn-primary">More details</a>
                 </div>
@@ -108,6 +111,8 @@ foreach ($stmt->fetchAll() as $product) {
 <?php
 }
 ?>
+</div>
+</div>
 
 </body>
 </html>
