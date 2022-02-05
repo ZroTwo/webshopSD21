@@ -1,6 +1,7 @@
-header{
+header {
     background: rgba(69, 0, 118, 0.84);
 }
+
 .btnproduct {
     background-color: rgba(69, 0, 118, 0.84);
 }
@@ -8,15 +9,18 @@ header{
 .btnproduct:hover {
     background-color: grey;
 }
+
 .products {
     display: flex;
     justify-content: center;
     padding: 5px;
 }
+
 .btntext {
     display: flex;
     justify-content: center;
 }
+
 .gradient-custom {
     /* fallback for old browsers */
     background: #6a11cb;
@@ -27,16 +31,23 @@ header{
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
+
 .allcards {
     display: flex;
     justify-content: center;
 }
+
 .cardproduct {
     display: flex;
     align-items: flex-end;
 }
+
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.cardproduct:hover {
+    outline: 2px solid purple;
 }
