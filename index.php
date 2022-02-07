@@ -56,9 +56,9 @@
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
                         <div class="dropdown-content">
-                            <a href="gewichten.php">gewichten</a>
-                            <a href="apparaturen.php">apparaturen</a>
-                            <a href="supplementen.php">supplementen</a>
+                            <a href="gewichten.php">weights</a>
+                            <a href="apparaturen.php">equipment</a>
+                            <a href="supplementen.php">supplements</a>
                         </div>
                     <li><a href="#workout" class="nav-link px-2 text-white hover">Workout Tips</a></li>
                 </ul>

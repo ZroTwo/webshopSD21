@@ -43,7 +43,6 @@ $stmt->execute();
     <meta name="theme-color" content="#7952b3">
 
 
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -64,63 +63,62 @@ $stmt->execute();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="p-3 bg-purple text-white">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+<header class="p-3 bg-purple text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            </a>
+            <ul id="menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><img src="images/Logo.png" class="logo"</li>
+                <li><a href="index.php" class="nav-link px-2 text-white hover">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
+                    <div class="dropdown-content">
+                        <a href="gewichten.php">weights</a>
+                        <a href="apparaturen.php">equipment</a>
+                        <a href="supplementen.php">supplements</a>
+                    </div>
+                <li><a href="#workout" class="nav-link px-2 text-white hover">Workout Tips</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                       aria-label="Search">
+            </form>
+            <div class="text-end">
+                <a href="loginp.php">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
                 </a>
-                <ul id="menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><img src="images/Logo.png" class="logo"</li>
-                    <li><a href="index.php" class="nav-link px-2 text-white hover">Home</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
-                        <div class="dropdown-content">
-                            <a href="gewichten.php">gewichten</a>
-                            <a href="apparaturen.php">apparaturen</a>
-                            <a href="supplementen.php">supplementen</a>
-                        </div>
-                    <li><a href="#workout" class="nav-link px-2 text-white hover">Workout Tips</a></li>
-                </ul>
-
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    <input type="search" class="form-control form-control-dark" placeholder="Search..."
-                           aria-label="Search">
-                </form>
-
-                <div class="text-end">
-                    <a href="loginp.php">
-                        <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    </a>
-                    <a href="registerpage.php">
-                        <button type="button" class="btn btn-warning">Sign-up</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-<br>
-<br>
-<div class="allcards">
-<?php
-foreach ($stmt->fetchAll() as $product) {
-    ?>
-    <div class="products">
-        <div class="card cardproduct" style="width: 18rem;">
-            <img class="card-img-top" src="<?php echo $product['image'] ?>" alt="Card image cap">
-            <div class="card-body">
-                <div>
-                <h5 class="card-title"><?php echo $product['title'] ?></h5>
-                <p class="card-text"><?php echo $product['description'] ?></p>
-                </div>
-                <div class="btntext">
-                    <a href="#" class="btn btnproduct btn-primary">More details</a>
-                </div>
+                <a href="registerpage.php">
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </a>
             </div>
         </div>
     </div>
-<?php
-}
-?>
+</header>
+<br>
+<br>
+<div class="allcards">
+    <?php
+    foreach ($stmt->fetchAll() as $product) {
+        ?>
+        <div class="products">
+            <div class="card cardproduct" style="width: 18rem;">
+                <img class="card-img-top" src="<?php echo $product['image'] ?>" alt="Card image cap">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title"><?php echo $product['title'] ?></h5>
+                        <p class="card-text"><?php echo $product['description'] ?></p>
+                    </div>
+                    <div class="btntext">
+                        <a href="#" class="btn btnproduct btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
 </div>
 </div>
 
