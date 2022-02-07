@@ -49,8 +49,12 @@ header {
 
 }
 .aboutus {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
+    color: black;
+    border: 3px;
+    border-style: solid;
 }
 .text-center.text-lg-start.bg-light.text-muted {
     background-color: darkgrey !important;
@@ -60,4 +64,13 @@ header {
 }
 section {
     padding: 2px;
+}
+
+.text-center.text-lg-start.bg-light.text-muted {
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-style: solid;
 }

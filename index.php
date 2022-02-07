@@ -127,7 +127,7 @@
         <h3 class="h3">About us</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid asperiores consectetur consequuntur
             distinctio dolor eius eligendi exercitationem, facere fuga libero maxime neque quis quo repellat repudiandae
-            tenetur, ullam voluptas!</p>
+            tenetur, ullam voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis ducimus eligendi facilis iste laudantium nemo omnis possimus quam reprehenderit! Cum ducimus ipsam, molestiae nemo nulla placeat quod velit vero.</p>
     </div>
 
     <!-- Footer -->
