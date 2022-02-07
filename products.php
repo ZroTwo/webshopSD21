@@ -74,9 +74,11 @@ $stmt->execute();
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
                     <div class="dropdown-content">
-                        <a href="gewichten.php">weights</a>
-                        <a href="apparaturen.php">equipment</a>
-                        <a href="supplementen.php">supplements</a>
+                        <a href="products.php">All</a>
+                        <a href="gewichten.php">Weights</a>
+                        <a href="apparaturen.php">Equipment</a>
+                        <a href="supplementen.php">Supplements</a>
+
                     </div>
                 <li><a href="#workout" class="nav-link px-2 text-white hover">Workout Tips</a></li>
             </ul>
@@ -85,6 +87,7 @@ $stmt->execute();
                 <input type="search" class="form-control form-control-dark" placeholder="Search..."
                        aria-label="Search">
             </form>
+
             <div class="text-end">
                 <a href="loginp.php">
                     <button type="button" class="btn btn-outline-light me-2">Login</button>

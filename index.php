@@ -56,10 +56,11 @@
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
                         <div class="dropdown-content">
+                            <a href="products.php">All</a>
                             <a href="gewichten.php">Weights</a>
                             <a href="apparaturen.php">Equipment</a>
                             <a href="supplementen.php">Supplements</a>
-                            <a href="products.php">All</a>
+
                         </div>
                     <li><a href="#workout" class="nav-link px-2 text-white hover">Workout Tips</a></li>
                 </ul>
