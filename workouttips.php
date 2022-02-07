@@ -11,7 +11,7 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-$stmt = $conn->prepare("SELECT * FROM products");
+$stmt = $conn->prepare("SELECT * FROM  workoutcategories");
 $stmt->execute();
 
 ?>
@@ -90,29 +90,24 @@ $stmt->execute();
 </header>
 <br>
 <br>
-<div class="allcards">
 <?php
-foreach ($stmt->fetchAll() as $product) {
+foreach ($stmt->fetchAll() as $workouttips) {
     ?>
     <div class="products">
         <div class="card cardproduct" style="width: 18rem;">
-            <img class="card-img-top" src="<?php echo $product['image'] ?>" alt="Card image cap">
+            <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-                <div>
-                <h5 class="card-title"><?php echo $product['title'] ?></h5>
-                <p class="card-text"><?php echo $product['description'] ?></p>
-                </div>
+                <h5 class="card-title"><?php echo $workouttips['title'] ?></h5>
+                <p class="card-text">short product description.</p>
                 <div class="btntext">
                     <a href="#" class="btn btnproduct btn-primary">More details</a>
                 </div>
             </div>
         </div>
     </div>
-<?php
+    <?php
 }
 ?>
-</div>
-</div>
 
 </body>
 </html>
