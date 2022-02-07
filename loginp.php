@@ -21,6 +21,7 @@ $user = new Usert();
     <title>MMG - Login</title>
     <link href="loginstyle.css" rel="stylesheet">
     <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="p-3 bg-purple text-white">
