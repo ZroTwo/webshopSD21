@@ -20,6 +20,7 @@ $user = new Usert();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MMG - Login</title>
     <link href="loginstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css">
 </head>
 <body>
 <header class="p-3 bg-purple text-white">

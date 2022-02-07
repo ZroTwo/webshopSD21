@@ -22,6 +22,7 @@
     <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3"><section class="h-100 h-custom" style="background-color: #eee;">
         <link rel="stylesheet" href="stylesqb.css">        <div class="container py-5 h-100"><section class="h-100 gradient-custom">
+                <link rel="stylesheet" href="styles.css">
                 <div class="container py-5">
                     <div class="row d-flex justify-content-center my-4">
                         <div class="col-md-8">

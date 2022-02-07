@@ -22,6 +22,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="stylec.css" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="styles.css">
     <title>MMG - Register</title>
 </head>
 <body>

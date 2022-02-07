@@ -60,6 +60,7 @@ $stmt->execute();
     </style>
     <link rel="stylesheet" href="stylesqb.css">
     <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="p-3 bg-purple text-white">

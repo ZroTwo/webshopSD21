@@ -43,6 +43,7 @@ $stmt->execute();
     <meta name="theme-color" content="#7952b3">
 
 
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -59,6 +60,8 @@ $stmt->execute();
         }
     </style>
     <link rel="stylesheet" href="stylesqb.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="p-3 bg-purple text-white">
