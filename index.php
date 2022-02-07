@@ -52,7 +52,7 @@
                 </a>
                 <ul id="menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><img src="images/Logo.png" class="logo"</li>
-                    <li><a href="#home" class="nav-link px-2 text-white hover">Home</a></li>
+                    <li><a href="index.php" class="nav-link px-2 text-white hover">Home</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
                         <div class="dropdown-content">
