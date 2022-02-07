@@ -22,6 +22,39 @@ $user = new Usert();
     <link href="loginstyle.css" rel="stylesheet">
 </head>
 <body>
+<header class="p-3 bg-purple text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            </a>
+            <ul id="menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><img src="images/Logo.png" class="logo"</li>
+                <li><a href="#home" class="nav-link px-2 text-white hover" >Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn nav-link px-2 text-white hover">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                <li><a href="#workout" class="nav-link px-2 text-white hover" >Workout Tips</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <a href="loginp.php">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                </a>
+                <a href="registerpage.php">
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
 <main class="form-signin">
     <form method="post">
 

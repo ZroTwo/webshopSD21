@@ -69,8 +69,12 @@
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Sign-up</button>
+                    <a href="loginp.php">
+                        <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    </a>
+                    <a href="registerpage.php">
+                        <button type="button" class="btn btn-warning">Sign-up</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -183,13 +187,13 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contact
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-home me-3"></i> Location</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
                             info@example.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <p><i class="fas fa-phone me-3"></i> Phone Number</p>
+                        <p><i class="fas fa-print me-3"></i> Phone Number</p>
                     </div>
                     <!-- Grid column -->
                 </div>
