@@ -5,3 +5,59 @@
     display: flex;
     justify-content: center;
 }
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover ul {display: block;}
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+ul li ul li {
+    background: #555;
+    display: block;
+}
+ul li ul li a {display:block !important;}
+ul li ul li:hover {background: #666;}
+
+.logo {
+    display: flex;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 50px;
+    height: 50px;
+}
+
+header {
+    padding: 0px;
+}
+.container {
+    padding: 0px !important;
+    margin-left: 0px !important;
+}
+
+.carousel.slide {
+    display: flex;
+    width: 600px;
+    height: 350px;
+    align-items: center;
+    margin: auto;
+
+}
+.aboutus {
+    margin-top: 5px;
+    text-align: center;
+}
+.text-center.text-lg-start.bg-light.text-muted {
+    background-color: darkgrey !important;
+    color: black !important;
+    justify-content: center;
+    text-align: center;
+}
+section {
+    padding: 2px;
+}
