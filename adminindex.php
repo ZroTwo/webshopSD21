@@ -41,32 +41,26 @@ $stmt->execute();
     <table class="table">
         <thead>
         <th>
-        <th scope="col">#</th>
-        <th scope="col">image</th>
         <th scope="col">title</th>
+        <th scope="col">image</th>
         <th scope="col">description</th>
         <th scope="col">category</th>
         <th scope="col">price</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td> <?php echo $product['title'] ?> </td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
+        <?php
+        foreach ($stmt->fetchAll() as $product) { ?>
+            <tr>
+                <th scope="row">1</th>
+                <td> <?php echo $product['title'] ?> </td>
+                <td> <?php echo $product['image'] ?> </td>
+                <td> <?php echo $product['description'] ?></td>
+                <td> <?php echo $product['category_id'] ?></td>
+                <td> <?php echo $product['price'] ?></td>
+            </tr>
+        <?php }
+        ?>
         </tbody>
     </table>
 </div>

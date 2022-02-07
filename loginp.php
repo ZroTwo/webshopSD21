@@ -65,6 +65,10 @@ $user = new Usert();
 
         $user->login();
 
+        if(isset($_POST['email']) && isset( $_POST['password'])) {
+            if($_POST['email'] === 'admin@mmg.net' && $_POST['password'] === 'admin');
+            header('Location: adminindex.php');
+        }
         ?>
         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
         <div class="form-floating">
